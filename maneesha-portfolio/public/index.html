@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Meet Maneesha Rathnayake, a fully funded Informatics Engineering scholar, independent researcher and Tech Diplomacy and Global Policy enthusiast."
+    />
+    <meta name="theme-color" content="#071827" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Maneesha Rathnayake | Tech Diplomacy & Global Policy" />
+    <meta
+      property="og:description"
+      content="Exploring the intersection of technology, security and global policy as an international scholar and independent researcher."
+    />
+    <title>Maneesha Rathnayake — Tech Diplomacy &amp; Global Policy</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/style.css" />
+    <script>
+      (() => {
+        try {
+          const savedTheme =
+            localStorage.getItem("portfolio-theme") || localStorage.getItem("maneeshaTheme");
+          const preferredTheme = window.matchMedia("(prefers-color-scheme: light)").matches
+            ? "light"
+            : "dark";
+          document.documentElement.dataset.theme = savedTheme || preferredTheme;
+        } catch {
+          document.documentElement.dataset.theme = "dark";
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Maneesha Rathnayake home">MR<span>.</span></a>
+        <button
+          class="nav-toggle icon-button"
+          id="navToggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <svg class="menu-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+          <svg class="close-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m6 6 12 12M18 6 6 18" />
+          </svg>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#training">Global learning</a>
+          <a href="#interests">Interests</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button
+          class="theme-toggle icon-button"
+          id="themeToggle"
+          type="button"
+          aria-label="Switch to light theme"
+          title="Switch theme"
+        >
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" />
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.2 15.1A8.3 8.3 0 0 1 8.9 3.8 8.4 8.4 0 1 0 20.2 15.1Z" />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="home" aria-labelledby="hero-title">
+        <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+        <div class="container hero-inner">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span class="status-dot"></span> International Scholar · Independent Researcher</p>
+            <h1 id="hero-title">Maneesha <span>Rathnayake</span></h1>
+            <p class="hero-tagline">Exploring technology, security<br class="desktop-break" /> &amp; global policy.</p>
+            <p class="hero-description">
+              Tech Diplomacy and Global Policy enthusiast pursuing Informatics Engineering in
+              Indonesia, with a curiosity for digital forensics, national security and international relations.
+            </p>
+            <div class="hero-buttons">
+              <a class="btn primary-btn" href="#projects">
+                Explore my work <span aria-hidden="true">↗</span>
+              </a>
+              <a class="btn secondary-btn" href="#about">About me</a>
+              <a class="btn text-btn" href="#contact">Contact me <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="hero-meta">
+              <span class="meta-line"></span>
+              <span>Fully funded scholar · Sukabumi, Indonesia</span>
+            </div>
+          </div>
+          <div class="hero-visual reveal" aria-label="Profile photo">
+            <svg class="global-network" viewBox="0 0 460 460" aria-hidden="true">
+              <circle class="globe-ring" cx="230" cy="230" r="172" />
+              <ellipse class="globe-ring" cx="230" cy="230" rx="86" ry="172" />
+              <ellipse class="globe-ring" cx="230" cy="230" rx="172" ry="62" />
+              <path class="globe-line" d="M75 160 147 133 222 173 303 112 379 167M92 283 166 248 239 294 328 258 370 318M147 133 166 248M222 173 239 294M303 112 328 258" />
+              <circle class="globe-node" cx="147" cy="133" r="4" />
+              <circle class="globe-node" cx="222" cy="173" r="4" />
+              <circle class="globe-node" cx="303" cy="112" r="4" />
+              <circle class="globe-node" cx="166" cy="248" r="4" />
+              <circle class="globe-node" cx="239" cy="294" r="4" />
+              <circle class="globe-node" cx="328" cy="258" r="4" />
+            </svg>
+            <div class="orbit orbit-one" aria-hidden="true"></div>
+            <div class="orbit orbit-two" aria-hidden="true"></div>
+            <div class="profile-frame">
+              <img
+                id="heroProfileImage"
+                src="/images/profile-1793973922501.jpeg"
+                alt="Portrait of Maneesha Rathnayake"
+                fetchpriority="high"
+              />
+              <button
+                class="camera-btn"
+                id="cameraButton"
+                type="button"
+                aria-label="Update profile photo"
+                title="Update profile photo"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 15.2a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Zm7-8.2h-2.1l-.8-1.2A2 2 0 0 0 14.3 4h-4.6a2 2 0 0 0-1.8 1.1L7.1 7H5a2 2 0 0 0-2 2v8.5A2.5 2.5 0 0 0 5.5 20h13a2.5 2.5 0 0 0 2.5-2.5V9a2 2 0 0 0-2-2Zm-7 10.8a4.8 4.8 0 1 1 0-9.6 4.8 4.8 0 0 1 0 9.6Z" />
+                </svg>
+              </button>
+              <input
+                id="profilePhotoInput"
+                type="file"
+                name="profilePhoto"
+                accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp"
+                hidden
+              />
+            </div>
+            <div class="visual-caption">
+              <span class="caption-mark" aria-hidden="true">✳</span>
+              <span>Curious by nature.<br /><strong>Driven by discovery.</strong></span>
+            </div>
+            <p class="upload-status" id="uploadStatus" role="status" aria-live="polite"></p>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#about" aria-label="Scroll to About">
+          <span>Scroll to explore</span><span class="scroll-line" aria-hidden="true"></span>
+        </a>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-label">A little about me</p>
+            <h2 id="about-title">Curiosity with <span>purpose.</span></h2>
+          </div>
+          <div class="about-layout">
+            <div class="about-lead-block reveal">
+              <p class="about-lead">
+                An international scholar exploring the intersection of
+                <span>technology, national security and global policy.</span>
+              </p>
+              <div class="about-focus">
+                <span>TECH DIPLOMACY</span><span>DIGITAL FORENSICS</span><span>GLOBAL POLICY</span>
+              </div>
+            </div>
+            <div class="about-copy reveal">
+              <p>
+                My name is Maneesha Rathnayake. I am a fully funded international scholar pursuing
+                a Bachelor’s degree in Informatics Engineering at Nusa Putra University in
+                Sukabumi, West Java, Indonesia.
+              </p>
+              <p>
+                While my academic foundation is built on analytical engineering and data
+                management, my true passion lies at the intersection of
+                <strong>technology, national security and global policy.</strong> I am deeply
+                interested in how data shapes modern foreign policy, digital forensics and science
+                diplomacy.
+              </p>
+              <p>
+                I have an educational background from ESOFT Metro Campus and serve as an
+                independent researcher with the Sri Lanka UFO Research Association (SLUFORA).
+                Through specialized global policy training with UNICEF and the Asia-Europe
+                Foundation (ASEF), I am developing my skills in evidence co-creation and
+                cross-cultural communication.
+              </p>
+              <p>
+                With an investigative mindset, I am eager to connect with professionals in
+                international relations, intelligence and diplomatic sectors.
+              </p>
+              <div class="about-note">
+                <span class="note-icon" aria-hidden="true">↗</span>
+                <span>Investigative by nature. International in outlook.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-label">Community &amp; leadership</p>
+            <h2 id="experience-title">Learning through <span>involvement.</span></h2>
+          </div>
+          <div class="card-grid experience-grid">
+            <article class="feature-card reveal">
+              <span class="card-index">01 <span>— RESEARCH</span></span>
+              <div class="card-icon" aria-hidden="true">⌕</div>
+              <h3>SLUFORA</h3>
+              <p class="card-role">Independent Researcher</p>
+              <p class="card-description">Independent researcher with the Sri Lanka UFO Research Association.</p>
+            </article>
+            <article class="feature-card reveal">
+              <span class="card-index">02 <span>— COMMUNITY</span></span>
+              <div class="card-icon" aria-hidden="true">✳</div>
+              <h3>CEURA</h3>
+              <p class="card-role">Co-Founder</p>
+              <p class="card-description">Co-Founder of CEURA.</p>
+            </article>
+            <article class="feature-card reveal">
+              <span class="card-index">03 <span>— ASTRONOMY</span></span>
+              <div class="card-icon" aria-hidden="true">✧</div>
+              <h3>Institute of Astronomy</h3>
+              <p class="card-role">Amateur Astronomers Society Member</p>
+              <p class="card-description">A member of the Amateur Astronomers Society with an interest in space science.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section interests-section" id="interests" aria-labelledby="interests-title">
+        <div class="container interests-layout">
+          <div class="section-heading reveal">
+            <p class="section-label">Questions I’m drawn to</p>
+            <h2 id="interests-title">Where ideas <span>meet.</span></h2>
+            <p class="section-intro">
+              A wide-ranging set of interests connected by a curiosity about evidence, systems and
+              the role of technology in our world.
+            </p>
+          </div>
+          <div class="interest-grid reveal">
+            <article class="interest-card"><span>01</span><h3>Technology &amp; National Security</h3></article>
+            <article class="interest-card"><span>02</span><h3>Digital Forensics</h3></article>
+            <article class="interest-card"><span>03</span><h3>Cybersecurity</h3></article>
+            <article class="interest-card"><span>04</span><h3>Data Science &amp; Data Management</h3></article>
+            <article class="interest-card"><span>05</span><h3>Tech Diplomacy</h3></article>
+            <article class="interest-card"><span>06</span><h3>Science Diplomacy</h3></article>
+            <article class="interest-card"><span>07</span><h3>Global Governance &amp; Policy</h3></article>
+            <article class="interest-card"><span>08</span><h3>International Relations</h3></article>
+            <article class="interest-card"><span>09</span><h3>Space Science &amp; UAP Research</h3></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section training-section" id="training" aria-labelledby="training-title">
+        <div class="container training-layout">
+          <div class="section-heading reveal">
+            <p class="section-label">Global policy learning</p>
+            <h2 id="training-title">Learning across <span>perspectives.</span></h2>
+            <p class="section-intro">
+              Specialized learning activities shaping my interest in global policy and
+              cross-cultural exchange.
+            </p>
+          </div>
+          <div class="training-list reveal">
+            <article class="training-card">
+              <span class="training-symbol" aria-hidden="true">◎</span>
+              <div>
+                <p class="card-index">GLOBAL POLICY TRAINING</p>
+                <h3>UNICEF</h3>
+                <p>Specialized global policy learning, including an interest in evidence co-creation.</p>
+              </div>
+              <span class="training-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="training-card">
+              <span class="training-symbol" aria-hidden="true">◉</span>
+              <div>
+                <p class="card-index">CROSS-REGIONAL LEARNING</p>
+                <h3>Asia-Europe Foundation (ASEF)</h3>
+                <p>Global policy learning with a focus on evidence co-creation and cross-cultural communication.</p>
+              </div>
+              <span class="training-arrow" aria-hidden="true">↗</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-heading section-heading-row reveal">
+            <div>
+              <p class="section-label">Selected work</p>
+              <h2 id="projects-title">Ideas in <span>progress.</span></h2>
+            </div>
+            <p class="section-intro">A selection of projects across investigation, analysis and technology.</p>
+          </div>
+          <div class="card-grid project-grid">
+            <article class="project-card reveal">
+              <div class="project-art project-art-uap" aria-hidden="true">
+                <span class="project-orbit"></span><span class="project-star">✳</span><span class="project-art-label">FIELD NOTES / 01</span>
+              </div>
+              <div class="project-content">
+                <p class="card-index">01 / PROJECT</p>
+                <h3>UAP Investigation Toolkit</h3>
+                <p>A JavaScript-based npm package and companion web application designed to organize investigation reports and support evidence review.</p>
+                <div class="tags"><span>JavaScript</span><span>Node.js</span><span>Express.js</span></div>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-art project-art-network" aria-hidden="true">
+                <span class="network-node node-one"></span><span class="network-node node-two"></span><span class="network-node node-three"></span><span class="network-node node-four"></span><span class="network-node node-five"></span><span class="project-art-label">SIGNAL / 02</span>
+              </div>
+              <div class="project-content">
+                <p class="card-index">02 / PROJECT</p>
+                <h3>Campus Announcement System</h3>
+                <p>A Python networking solution using socket programming and multithreading to deliver announcements to multiple clients.</p>
+                <div class="tags"><span>Python</span><span>Sockets</span><span>Networking</span></div>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-art project-art-analysis" aria-hidden="true">
+                <span class="analysis-line"></span><span class="analysis-line"></span><span class="analysis-line"></span><span class="analysis-point"></span><span class="project-art-label">PATTERN / 03</span>
+              </div>
+              <div class="project-content">
+                <p class="card-index">03 / PROJECT</p>
+                <h3>Forensic Statement Analysis System</h3>
+                <p>A prototype combining Flask and NLP for analyzing statements and identifying contextual patterns in forensic research.</p>
+                <div class="tags"><span>Python</span><span>Flask</span><span>NLP</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="container skills-layout">
+          <div class="section-heading reveal">
+            <p class="section-label">Developing capabilities</p>
+            <h2 id="skills-title">Tools for <span>exploration.</span></h2>
+            <p class="section-intro">A developing toolkit informed by my academic path, project work and global policy learning.</p>
+          </div>
+          <div class="skill-groups reveal">
+            <div class="skill-row"><span class="skill-number">01</span><div><h3>Technology &amp; data</h3><p>Programming · Software development · Data management · Data analysis</p></div><span class="skill-arrow" aria-hidden="true">↗</span></div>
+            <div class="skill-row"><span class="skill-number">02</span><div><h3>Research &amp; investigation</h3><p>Independent research · Evidence analysis · Scientific research interests</p></div><span class="skill-arrow" aria-hidden="true">↗</span></div>
+            <div class="skill-row"><span class="skill-number">03</span><div><h3>Global engagement</h3><p>Cross-cultural communication · Global policy learning</p></div><span class="skill-arrow" aria-hidden="true">↗</span></div>
+            <div class="skill-row"><span class="skill-number">04</span><div><h3>Leadership &amp; collaboration</h3><p>Community co-founding · Research collaboration</p></div><span class="skill-arrow" aria-hidden="true">↗</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section education-section" id="education" aria-labelledby="education-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-label">Academic journey</p>
+            <h2 id="education-title">Learning with <span>intention.</span></h2>
+          </div>
+          <div class="education-timeline">
+            <article class="education-card reveal">
+              <div class="education-marker" aria-hidden="true"><span></span></div>
+              <div class="education-copy">
+                <p class="card-index">CURRENT STUDIES</p>
+                <h3>Nusa Putra University</h3>
+                <p class="education-degree">Bachelor’s degree in Informatics Engineering</p>
+                <p class="education-location">Sukabumi, West Java, Indonesia</p>
+              </div>
+              <div class="scholarship-badge">
+                <span aria-hidden="true">✧</span>
+                <div><small>SCHOLARSHIP</small><strong>Fully funded Genusian Scholar</strong></div>
+              </div>
+            </article>
+            <article class="education-card reveal">
+              <div class="education-marker" aria-hidden="true"><span></span></div>
+              <div class="education-copy">
+                <p class="card-index">EDUCATIONAL BACKGROUND</p>
+                <h3>ESOFT Metro Campus</h3>
+                <p class="education-degree">Sri Lanka</p>
+                <p class="education-location">Further qualification details were not provided.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section achievements-section" id="achievements" aria-labelledby="achievements-title">
+        <div class="container achievements-layout">
+          <div class="section-heading reveal">
+            <p class="section-label">Recognition</p>
+            <h2 id="achievements-title">Milestones &amp; <span>certificates.</span></h2>
+          </div>
+          <div class="achievement-card reveal">
+            <span class="achievement-icon" aria-hidden="true">✧</span>
+            <div>
+              <p class="card-index">SCHOLARSHIP</p>
+              <h3>Genusian Scholarship</h3>
+              <p>Scholarship awardee at Nusa Putra University.</p>
+            </div>
+          </div>
+          <p class="achievement-note reveal">No certificate details or certificate images were listed in the existing portfolio.</p>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-panel reveal">
+          <div class="contact-copy">
+            <p class="section-label">Start a conversation</p>
+            <h2 id="contact-title">Let’s make room for <span>good questions.</span></h2>
+            <p>I welcome thoughtful conversations and opportunities in technology, digital forensics, global policy, research, international relations and science diplomacy.</p>
+          </div>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">@</span>
+              <div><small>EMAIL</small><a href="mailto:rathnaayakakalpani@gmail.com">rathnaayakakalpani@gmail.com</a></div>
+            </div>
+            <p class="contact-note">No LinkedIn or other social profile URLs were supplied.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="footer-brand" href="#home">MR<span>.</span></a>
+        <p>Tech Diplomacy · Research · Global Policy</p>
+        <p>© <span id="year"></span> Maneesha Rathnayake</p>
+      </div>
+    </footer>
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" title="Back to top">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 14 6-6 6 6" /></svg>
+    </button>
+    <script src="/script.js" defer></script>
+  </body>
+</html>
